@@ -4,6 +4,10 @@ import java.lang.Math;
 import java.awt.geom.Point2D;
 
 
+public fun angleBetween(a, b) {
+    return angleBetween(a.getX(), a.getY(), b.getX(), b.getY());
+}
+
 // calculates angle between two points
 // x1, y1 -> point a
 // x2, y2 -> point b
