@@ -27,9 +27,8 @@ public fun distanceBetween(x1, y1, x2, y2) {
 // px1, py1 -> the point to test
 // x2, y2, x3, y3 -> the line
 public fun onLine(px1, py1, x2, y2, x3, y3) {
-    var d23 = distanceBetween(x2, y2, x3, x3);
+    var d23 = distanceBetween(x2, y2, x3, y3);
     var d = distanceBetween(px1, py1, x3, y3) + distanceBetween(px1, py1, x2, y2);
     var eps = 0.00000000001;
-
     return (d + eps) > d23 && (d - eps) < d23;
 }
